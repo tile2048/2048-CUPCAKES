@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>2048 Cupcakes — puzle de fichas de cupcakes</title>
+  <meta name="description" content="Juega a 2048 Cupcakes, una versión repostera del puzle de fichas: une cupcakes iguales y sube de la vainilla al arcoíris sin llenar el tablero.">
+
+  <link rel="canonical" href="https://tile2048.github.io/2048-CUPCAKES/es/">
+  <link rel="alternate" hreflang="en" href="https://tile2048.github.io/2048-CUPCAKES/">
+  <link rel="alternate" hreflang="es" href="https://tile2048.github.io/2048-CUPCAKES/es/">
+  <link rel="alternate" hreflang="x-default" href="https://tile2048.github.io/2048-CUPCAKES/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 Cupcakes — puzle de fichas de cupcakes">
+  <meta property="og:description" content="Juega a 2048 Cupcakes, una versión repostera del puzle de fichas: une cupcakes iguales y sube de la vainilla al arcoíris sin llenar el tablero.">
+  <meta property="og:url" content="https://tile2048.github.io/2048-CUPCAKES/es/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <link href="../style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 Cupcakes",
+    "inLanguage": "es",
+    "url": "https://tile2048.github.io/2048-CUPCAKES/es/",
+    "description": "Versión con cupcakes del puzle de fichas 2048: une cupcakes iguales para subir en la carta y llegar al cupcake 2048."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-links"><a href="../" hreflang="en" lang="en">English</a> <span>Español</span></nav>
+
+    <div class="heading">
+      <div class="title-container">
+        <h1 class="title">2048 <small>Cupcakes</small></h1>
+      </div>
+			<div class="scores-container">
+				<div class="score-points">0</div>
+				<div class="best-points">0</div>
+			</div>
+      <div class="scores-container">
+        <div class="score-container">0 Kcal</div>
+        <div class="best-container">0 Kcal</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">¡Únete a los <strong>Cupcakes!</strong></p>
+      <a class="restart-button">Jugar otra vez</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Seguir jugando</a>
+          <a class="retry-button">Reintentar</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">Cómo jugar:</strong> usa las <strong>teclas de flecha</strong> para mover las fichas. Cuando dos fichas con el mismo símbolo se tocan, ¡<strong>ascienden de nivel!</strong>
+    </p>
+    <p class="game-about">
+      El mostrador tiene trece dulces y la bandeja es una cuadrícula de 4×4. Un cupcake de cumpleaños de vainilla abre la carta en el 2; después suben el rosa chicle, la vainilla soleada, el ganache rubio Valrhona, la tarta de queso con chocolate y mantequilla de maní, el dulce de chocolate y menta, la telaraña de chocolate, el malvavisco tostado, las galletas con crema y el sundae de chocolate, hasta la menta con chocolate blanco del 2048, la vainilla con confeti de 2017 y el remolino de arcoíris del 8192. Desliza con las flechas o el dedo; dos cupcakes iguales se convierten en el siguiente y sus calorías suman a tu puntuación. Gana con la menta del 2048 y sigue hasta el arcoíris. Una bandeja llena sin parejas cierra el obrador.
+    </p>
+    <hr>
+    <p class="tile-legend"><strong class="important">Leyenda de fichas:</strong></p>
+    <div class="legend-list">
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2"><img src="../style/img/2.jpg" alt="vainilla de cumpleaños"></div></div>
+        <p>Vainilla de cumpleaños (200 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4"><img src="../style/img/4.jpg" alt="rosa chicle"></div></div>
+        <p>Rosa chicle (250 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8"><img src="../style/img/8.jpg" alt="vainilla soleada"></div></div>
+        <p>Vainilla soleada (320 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-16"><img src="../style/img/16.jpg" alt="ganache rubia Valrhona"></div></div>
+        <p>Ganache rubia Valrhona (400 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-32"><img src="../style/img/32.jpg" alt="tarta de queso con chocolate y mantequilla de maní"></div></div>
+        <p>Tarta de queso con chocolate y mantequilla de maní (500 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-64"><img src="../style/img/64.jpg" alt="dulce de chocolate y menta"></div></div>
+        <p>Dulce de chocolate y menta (650 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-128"><img src="../style/img/128.jpg" alt="telaraña de chocolate"></div></div>
+        <p>Telaraña de chocolate (820 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-256"><img src="../style/img/256.jpg" alt="malvavisco tostado"></div></div>
+        <p>Malvavisco tostado (1000 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-512"><img src="../style/img/512.jpg" alt="galletas con crema"></div></div>
+        <p>Galletas con crema (1200 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-1024"><img src="../style/img/1024.jpg" alt="sundae de chocolate"></div></div>
+        <p>Sundae de chocolate (1500 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2048"><img src="../style/img/2048.jpg" alt="chocolate blanco con menta"></div></div>
+        <p>Chocolate blanco con menta (2000 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4096"><img src="../style/img/4096.jpg" alt="vainilla con confeti 2017"></div></div>
+        <p>Vainilla con confeti 2017 (3000 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8192"><img src="../style/img/8192.jpg" alt="arcoíris"></div></div>
+        <p>Arcoíris (5000 Kcal)</p>
+      </div>
+    </div>
+    <hr>
+    <p class="disclaimer">
+    <strong class="important">Nota:</strong> Una variante creada por aficionados de 2048, el juego original de Gabriele Cirulli.
+    </p>
+    <hr>
+    <p class="credits">
+      Imágenes de Cupcakes por <a href="http://www.georgetowncupcake.com/" title="Georgetown Cupcake | DC Cupcakes | About">Georgetown Cupcake</a>.
+    </p>
+  </div>
+
+  <script src="../js/bind_polyfill.js"></script>
+  <script src="../js/classlist_polyfill.js"></script>
+  <script src="../js/animframe_polyfill.js"></script>
+  <script>
+    // Assets and sentences of this page. The English page sits at the repo root.
+    window.GAME_ROOT = "../";
+
+    // Text that only appears once a game is running, in the language of this page.
+    window.PAGE_STRINGS = {
+      "game-won": "¡Ganaste!",
+      "game-over": "¡Fin del juego!",
+      "tweet1": "Conseguí \"",
+      "tweet2": " en 2048-CUPCAKES #2048game",
+      "2": "vainilla de cumpleaños",
+      "4": "rosa chicle",
+      "8": "vainilla soleada",
+      "16": "ganache rubia Valrhona",
+      "32": "tarta de queso con chocolate y mantequilla de maní",
+      "64": "dulce de chocolate y menta",
+      "128": "telaraña de chocolate",
+      "256": "malvavisco tostado",
+      "512": "galletas con crema",
+      "1024": "sundae de chocolate",
+      "2048": "chocolate blanco con menta",
+      "4096": "vainilla con confeti 2017",
+      "8192": "arcoíris",
+      "p0": "Vainilla de cumpleaños",
+      "p2": "Vainilla de cumpleaños",
+      "p4": "Rosa chicle",
+      "p8": "Vainilla soleada",
+      "p16": "Ganache rubia Valrhona",
+      "p32": "Tarta queso choc. y maní",
+      "p64": "Dulce choc. y menta",
+      "p128": "Telaraña de choc.",
+      "p256": "Malvavisco tostado",
+      "p512": "Galletas con crema",
+      "p1024": "Sundae de choc.",
+      "p2048": "Choc. blanco con menta",
+      "p4096": "Vainilla confeti 2017",
+      "p8192": "Arcoíris"
+    };
+
+    function Localize(key) {
+      var name = String(key);
+      if (window.PAGE_STRINGS.hasOwnProperty(name)) return window.PAGE_STRINGS[name];
+      // Scores that no longer sit on a tile fall back to the plain number.
+      if (name.charAt(0) === "p" && window.PAGE_STRINGS.hasOwnProperty(name.slice(1))) {
+        return window.PAGE_STRINGS[name.slice(1)];
+      }
+      return name;
+    }
+  </script>
+  <script src="../js/keyboard_input_manager.js"></script>
+  <script src="../js/html_actuator.js"></script>
+  <script src="../js/grid.js"></script>
+  <script src="../js/tile.js"></script>
+  <script src="../js/local_storage_manager.js"></script>
+  <script src="../js/game_manager.js"></script>
+  <script src="../js/application.js"></script>
+  <script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>

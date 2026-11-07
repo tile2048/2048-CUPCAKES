@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2048 Cupcakes — cupcake tile puzzle</title>
+  <meta name="description" content="Play 2048 Cupcakes, a bakery take on the sliding tile puzzle: merge matching cupcakes, climb from vanilla birthday to rainbow, and keep the board clear.">
+
+  <link rel="canonical" href="https://tile2048.github.io/2048-CUPCAKES/">
+  <link rel="alternate" hreflang="en" href="https://tile2048.github.io/2048-CUPCAKES/">
+  <link rel="alternate" hreflang="es" href="https://tile2048.github.io/2048-CUPCAKES/es/">
+  <link rel="alternate" hreflang="x-default" href="https://tile2048.github.io/2048-CUPCAKES/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 Cupcakes — cupcake tile puzzle">
+  <meta property="og:description" content="Play 2048 Cupcakes, a bakery take on the sliding tile puzzle: merge matching cupcakes, climb from vanilla birthday to rainbow, and keep the board clear.">
+  <meta property="og:url" content="https://tile2048.github.io/2048-CUPCAKES/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 Cupcakes",
+    "inLanguage": "en",
+    "url": "https://tile2048.github.io/2048-CUPCAKES/",
+    "description": "A cupcake version of the 2048 sliding tile puzzle: merge equal cupcakes to climb the menu and reach the 2048 cupcake."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-links"><span>English</span> <a href="es/" hreflang="es" lang="es">Español</a></nav>
+
+    <div class="heading">
+      <div class="title-container">
+        <h1 class="title">2048 <small>Cupcakes</small></h1>
+      </div>
+			<div class="scores-container">
+				<div class="score-points">0</div>
+				<div class="best-points">0</div>
+			</div>
+      <div class="scores-container">
+        <div class="score-container">0 Kcal</div>
+        <div class="best-container">0 Kcal</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the <strong>Cupcakes!</strong></p>
+      <a class="restart-button">Play Again</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Retry</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same symbol touch, they <strong>get promoted!</strong>
+    </p>
+    <p class="game-about">
+      The counter holds thirteen bakes and the tray is a 4×4 grid. A vanilla birthday cupcake opens at 2; the menu then climbs through bubblegum pink, sunshine vanilla, Valrhona blonde ganache, chocolate peanut butter cheesecake, chocolate mint fudge, chocolate spider web, toasted marshmallow, cookies and creme and chocolate sundae, on to white chocolate peppermint at 2048, 2017 Confetti Vanilla, and the rainbow swirl at 8192. Slide with the arrow keys or a swipe; two identical cupcakes become the next one and their calories are added to your score. Win at the 2048 peppermint, then keep going for the rainbow. A full tray with no matching pair closes the shop.
+    </p>
+    <hr>
+    <p class="tile-legend"><strong class="important">Tile Legend:</strong></p>
+    <div class="legend-list">
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2"><img src="style/img/2.jpg" alt="vanilla birthday"></div></div>
+        <p>vanilla birthday (200 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4"><img src="style/img/4.jpg" alt="bubblegum pink"></div></div>
+        <p>bubblegum pink (250 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8"><img src="style/img/8.jpg" alt="sunshine vanilla"></div></div>
+        <p>sunshine vanilla (320 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-16"><img src="style/img/16.jpg" alt="valrhona blonde ganache"></div></div>
+        <p>valrhona blonde ganache (400 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-32"><img src="style/img/32.jpg" alt="chocolate peanut butter cheesecake"></div></div>
+        <p>chocolate peanut butter cheesecake (500 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-64"><img src="style/img/64.jpg" alt="chocolate mint fudge"></div></div>
+        <p>chocolate mint fudge (650 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-128"><img src="style/img/128.jpg" alt="chocolate spider web"></div></div>
+        <p>chocolate spider web (820 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-256"><img src="style/img/256.jpg" alt="toasted marshmallow"></div></div>
+        <p>toasted marshmallow (1000 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-512"><img src="style/img/512.jpg" alt="cookies and creme"></div></div>
+        <p>cookies and creme (1200 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-1024"><img src="style/img/1024.jpg" alt="chocolate sundae"></div></div>
+        <p>chocolate sundae (1500 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2048"><img src="style/img/2048.jpg" alt="white chocolate peppermint"></div></div>
+        <p>white chocolate peppermint (2000 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4096"><img src="style/img/4096.jpg" alt="2017 Confetti Vanilla"></div></div>
+        <p>2017 Confetti Vanilla (3000 Kcal)</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8192"><img src="style/img/8192.jpg" alt="Rainbow"></div></div>
+        <p>Rainbow (5000 Kcal)</p>
+      </div>
+    </div>
+    <hr>
+    <p class="disclaimer">
+    <strong class="important">Note:</strong> A fan-made variant of 2048, the original game by Gabriele Cirulli.
+    </p>
+    <hr>
+    <p class="credits">
+      Cupcakes images by <a href="http://www.georgetowncupcake.com/" title="Georgetown Cupcake | DC Cupcakes | About">Georgetown Cupcake</a>.
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script>
+    // Assets and sentences of this page. The Spanish page sets ../ and its own words.
+    window.GAME_ROOT = "";
+
+    // Text that only appears once a game is running, in the language of this page.
+    window.PAGE_STRINGS = {
+      "game-won": "You win!",
+      "game-over": "Game over!",
+      "tweet1": "I scored \"",
+      "tweet2": " at 2048-CUPCAKES #2048game",
+      "2": "vanilla birthday",
+      "4": "bubblegum pink",
+      "8": "sunshine vanilla",
+      "16": "valrhona blonde ganache",
+      "32": "chocolate peanut butter cheesecake",
+      "64": "chocolate mint fudge",
+      "128": "chocolate spider web",
+      "256": "toasted marshmallow",
+      "512": "cookies and creme",
+      "1024": "chocolate sundae",
+      "2048": "white chocolate peppermint",
+      "4096": "2017 Confetti Vanilla",
+      "8192": "Rainbow",
+      "p0": "vanilla birthday",
+      "p2": "vanilla birthday",
+      "p4": "bubblegum pink",
+      "p8": "sunshine vanilla",
+      "p16": "valrhona blonde ganache",
+      "p32": "choc. peanut butter cheesecake",
+      "p64": "choc. mint fudge",
+      "p128": "choc. spider web",
+      "p256": "toasted marshmallow",
+      "p512": "cookies and creme",
+      "p1024": "choc. sundae",
+      "p2048": "white choc. peppermint",
+      "p4096": "2017 Confetti Vanilla",
+      "p8192": "Rainbow"
+    };
+
+    function Localize(key) {
+      var name = String(key);
+      if (window.PAGE_STRINGS.hasOwnProperty(name)) return window.PAGE_STRINGS[name];
+      // Scores that no longer sit on a tile fall back to the plain number.
+      if (name.charAt(0) === "p" && window.PAGE_STRINGS.hasOwnProperty(name.slice(1))) {
+        return window.PAGE_STRINGS[name.slice(1)];
+      }
+      return name;
+    }
+  </script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>
